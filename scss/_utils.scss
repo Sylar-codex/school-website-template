@@ -1,0 +1,67 @@
+.container {
+  max-width: 110px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+// setting color based on background
+@function setTextColor($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+//set backgound and color
+@mixin set-background($color) {
+  background-color: $color;
+  color: setTextColor($color);
+}
+
+$spacenums: (1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 24, 32, 64);
+
+@each $space in $spacenums {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+  .ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+  .pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+  .pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+  .pl-#{$space} {
+    padding-left: #{$space}rem;
+  }
+  .mr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+}
