@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- my css style link -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>School web</title>
   </head>
@@ -145,48 +151,101 @@
         </p>
       </div>
     </section>
-    <section id="events-and-news">
-      <h2>Events and news</h2>
-      <div>
-        <div>
-          <img />
-          <h2>1</h2>
-          <p></p>
-        </div>
-        <div>
-          <img />
-          <h2>2</h2>
-          <p></p>
-        </div>
-        <div>
-          <img />
-          <h2>2</h2>
-          <p></p>
-        </div>
-      </div>
-    </section>
     <section id="gallery">
-      <div>
-        <img />
-        <img />
-        <img />
-        <img />
+      <div class="gallery-slider swiper mySwiper">
+        <div class="gallery swiper-wrapper">
+          <div class="gallery-img swiper-slide">
+            <img
+              src="./school-images/pexels-andrea-piacquadio-3762800.jpg"
+              alt="gallery"
+            />
+          </div>
+          <div class="gallery-img swiper-slide">
+            <img
+              src="./school-images/pexels-anastasiya-gepp-1462630.jpg"
+              alt="gallery"
+            />
+          </div>
+          <div class="gallery-img swiper-slide">
+            <img
+              src="./school-images/pexels-oladimeji-ajegbile-2861798.jpg"
+              alt="gallery"
+            />
+          </div>
+          <div class="gallery-img swiper-slide">
+            <img
+              src="./school-images/pexels-stanley-morales-3186386.jpg"
+              alt="gallery"
+            />
+          </div>
+          <div class="gallery-img swiper-slide">
+            <img
+              src="./school-images/pexels-pixabay-267761.jpg"
+              alt="gallery"
+            />
+          </div>
+          <div class="gallery-img swiper-slide">
+            <img
+              src="./school-images/pexels-julia-m-cameron-4143798.jpg"
+              alt="gallery"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section>
-      <div>
-        <h2>our history</h2>
-        <p>Our lovely history</p>
-      </div>
-      <div>
-        <h2>our vision</h2>
-        <p>Our wonderful vision</p>
-      </div>
-      <div>
-        <h2>facts</h2>
-        <p>the facts to behold</p>
+    <section id="hist-fact">
+      <div class="hist-fact">
+        <div class="hist">
+          <h2>our history</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            provident ex sed cum. Iusto praesentium cumque quis inventore
+            perspiciatis ut saepe, autem illo quam iste?
+          </p>
+        </div>
+        <div class="vision">
+          <h2>our vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            expedita. Sapiente odio vitae numquam aliquid, obcaecati tempore
+            suscipit quisquam ea dolorem ex fugit velit a.
+          </p>
+        </div>
+        <div class="facts">
+          <h2>facts</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+            nobis nisi dolorum tempore tenetur laboriosam voluptatem voluptates,
+            pariatur incidunt. Cupiditate vero ratione rem perferendis neque?
+          </p>
+        </div>
       </div>
     </section>
     <footer>Really couldn't wait for this part</footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
