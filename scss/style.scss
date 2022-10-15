@@ -284,3 +284,50 @@ a {
     }
   }
 }
+
+#boxes {
+  margin: 5rem;
+  .junior-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-transform: capitalize;
+      margin: 1rem;
+      border: 2px solid;
+      padding: 5rem;
+      width: 20rem;
+      height: 18rem;
+      i {
+        font-size: 25px;
+        margin-bottom: 1rem;
+      }
+    }
+    .box1,
+    .box6 {
+      @include set-background($secondary-color);
+    }
+    .box2,
+    .box4 {
+      @include set-background($nav-color);
+    }
+    .box3,
+    .box5 {
+      @include set-background(#deb887);
+    }
+    .line {
+      width: 2rem;
+      margin-top: 10px;
+      border: 1px solid;
+    }
+  }
+}
