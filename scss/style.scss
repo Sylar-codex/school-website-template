@@ -331,3 +331,94 @@ a {
     }
   }
 }
+
+#electives {
+  margin-top: 5rem;
+  .electives {
+    margin: 2rem;
+    h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 40px;
+      color: $secondary-color;
+    }
+    .elective-groups {
+      @include set-background(#113821);
+      margin: 2rem 70% 0 0;
+      padding: 8rem 2rem;
+      position: relative;
+      h2 {
+        margin-bottom: 2rem;
+        color: $nav-color;
+        font-size: 30px;
+      }
+      p {
+        margin: 5px;
+      }
+      .elective-line {
+        border: 2px solid;
+        position: absolute;
+        top: 95%;
+        left: 5%;
+        width: 90%;
+      }
+    }
+  }
+}
+
+#about-message {
+  display: flex;
+  .about-msg-1 {
+    @include set-background($secondary-color);
+    padding: 2rem 5rem;
+    width: 60%;
+    .principal-message {
+      color: #000000;
+      h1 {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 17px;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .welcome-msg {
+      margin: 13px 0px;
+      font-size: 20px;
+    }
+    .about-list {
+      font-size: 20px;
+      ul {
+        margin-top: 20px;
+        li {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .about-msg-2 {
+    @include set-background(#000000);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+#free-section {
+  height: 4rem;
+  .free-section {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+}
