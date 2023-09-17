@@ -261,6 +261,8 @@ a {
   line-height: 1.4;
 }
 
+// Academics page
+
 #acad-background {
   margin-top: 2.5rem;
   .pictures-acad {
@@ -308,7 +310,6 @@ a {
       text-align: center;
       text-transform: capitalize;
       margin: 1rem;
-      border: 2px solid;
       padding: 5rem;
       width: 20rem;
       height: 18rem;
@@ -371,6 +372,7 @@ a {
   }
 }
 
+//about page
 #about-message {
   display: flex;
   .about-msg-1 {
@@ -445,7 +447,7 @@ a {
     }
   }
 }
-
+//admission page
 #admission-timeline {
   .admission-timeline {
     display: flex;
@@ -564,5 +566,114 @@ a {
       opacity: 0.8;
       cursor: pointer;
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  // This is for admission page
+  #admission-timeline {
+    .admission-timeline {
+      .timeline-col {
+        // This is for the table
+        flex-direction: column;
+        border: 2px solid $secondary-color;
+        &1 {
+          border: none;
+          border-bottom: 2px solid $secondary-color;
+          width: 100%;
+        }
+        &2 {
+          border: none;
+          border-bottom: 2px solid $secondary-color;
+          width: 100%;
+        }
+        &3 {
+          border: none;
+          padding-bottom: 1rem;
+          width: 100%;
+        }
+      }
+    }
+    .timeline-nb {
+      font-size: 17px;
+      span {
+        font-style: italic;
+        font-weight: 700;
+      }
+    }
+  }
+
+  #exam-schedule {
+    .exam-schedule {
+      .tab-col {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+
+  //the about page
+
+  #about-message {
+    flex-direction: column;
+    .about-msg-1 {
+      padding: 2rem;
+      width: 100%;
+    }
+    .about-msg-2 {
+      width: 100%;
+      padding: 2.5rem;
+      font-size: 14px;
+    }
+  }
+
+  //Academics page
+
+  #acad-details {
+    margin-top: 3rem;
+    .acad-details {
+      margin: 2rem;
+      h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 19px;
+        line-height: 1.5;
+      }
+    }
+  }
+  //----> This are the boxes in Academics page <-----
+  #boxes {
+    margin: 2rem;
+  }
+
+  #electives {
+    margin-top: 5rem;
+    .electives {
+      margin: 2rem;
+      h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        color: $secondary-color;
+      }
+      .elective-groups {
+        margin: 2rem;
+        h2 {
+          margin-bottom: 0.75rem;
+        }
+        p {
+          padding: 5px 2px;
+        }
+      }
+    }
+  }
+
+  .footer-div {
+    flex-direction: column;
+    gap: 12px;
   }
 }
