@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- my css style link -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- fontawesome icon -->
+    <script
+      src="https://kit.fontawesome.com/a300b75309.js"
+      crossorigin="anonymous"
+    ></script>
     <title>About us</title>
   </head>
   <body>
@@ -13,15 +18,20 @@
       <div class="logo-text">
         <h2>The love for Education</h2>
       </div>
-      <div class="nav-bar">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admission</a></li>
-          </ul>
-        </nav>
+      <div>
+        <div class="nav-links" id="nav-div">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="current-page"><a href="about.html">About</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="admissions.html">Admission</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="menu_icon">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </header>
     <section id="acad-background">
@@ -81,24 +91,46 @@
         </p>
       </div>
     </section>
+    <!-- This section allows for flexibility like notes on what to expect while in the school, could also serve as a notice board -->
     <section id="free-section">
       <div class="free-section">free section</div>
     </section>
     <footer>
-      <div class="returns">
-        <p>Admin</p>
-        <p>staff</p>
-        <p>parent</p>
+      <div class="text-block">
+        <h2>Text Block</h2>
+        <p>
+          Add contents and context you will like people to know about like
+          opening and closing hours and also affliations of the school
+        </p>
+      </div>
+      <div class="moto">
+        <h2>School Moto</h2>
+        <p>Dedication and deligence, promotion of peace and equality of all</p>
       </div>
       <div class="contacts">
-        <p>contact</p>
-        <p>123-2542-900</p>
-      </div>
-      <div class="socials">
-        <p>facebook</p>
-        <p>instagram</p>
-        <p>pinterest</p>
+        <h2>Contacts</h2>
+        <div class="email">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:info@example.com">Info@example.com</a>
+        </div>
+        <div class="telephone">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+1 483 8499 948">+1 483 8499 948</a>
+        </div>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <a
+            href="https://www.google.ru/maps/place/Google+Building+41,+Mountain+View,+CA+94043,+USA/@37.4224082,-122.0856086,17z/data=!3m1!4b1!4m6!3m5!1s0x808fba02f3d60bc5:0x6bc3b76cb42de9de!8m2!3d37.4224082!4d-122.0856086!16s%2Fg%2F12hmtv88v?entry=ttu"
+            >1600 Amphitheatre Pkwy Mountain View, CA 94043, United States</a
+          >
+        </div>
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
       </div>
     </footer>
+    <script src="toggle.js"></script>
   </body>
 </html>
