@@ -542,7 +542,6 @@ footer {
     }
     .timeline-col {
       display: flex;
-      min-height: max-content;
       margin: 2rem;
       &1 {
         border: 2px solid $secondary-color;
@@ -550,8 +549,7 @@ footer {
         flex-direction: column;
         width: 33%;
         p {
-          padding: 45px;
-          height: 50px;
+          padding: 2.7rem;
           max-height: 50px;
           font-size: 20px;
         }
@@ -562,8 +560,7 @@ footer {
         flex-direction: column;
         width: 33%;
         p {
-          padding: 45px;
-          height: 50px;
+          padding: 2.7rem;
           max-height: 50px;
           font-size: 20px;
         }
@@ -574,8 +571,7 @@ footer {
         flex-direction: column;
         width: 33%;
         p {
-          padding: 45px;
-          height: 50px;
+          padding: 2.7rem;
           max-height: 50px;
           font-size: 20px;
         }
@@ -730,7 +726,6 @@ footer {
       }
       p {
         padding: 1rem;
-        border: 2px solid;
       }
     }
   }
@@ -760,17 +755,29 @@ footer {
           border-bottom: 2px solid $secondary-color;
           width: 100%;
           padding-bottom: 1rem;
+          p {
+            padding: 1rem 1.5rem 2.7rem;
+            font-size: 18px;
+          }
         }
         &2 {
           border: none;
           border-bottom: 2px solid $secondary-color;
           width: 100%;
           padding-bottom: 1rem;
+          p {
+            padding: 1rem 1.5rem 2.7rem;
+            font-size: 18px;
+          }
         }
         &3 {
           border: none;
           padding-bottom: 2.3rem;
           width: 100%;
+          p {
+            padding: 1rem 1.5rem 2.7rem;
+            font-size: 18px;
+          }
         }
       }
     }
