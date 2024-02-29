@@ -12,12 +12,25 @@ header {
   @include set-background($secondary-color);
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  align-items: center;
+  padding: 0.5rem 1.3rem;
   position: fixed;
   top: 0;
   z-index: 5;
   width: 100vw;
 }
+.logo {
+  .logo-img {
+    width: 7rem;
+    height: 5rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 #menu_icon {
   display: none;
   font-size: 1.64rem;
@@ -34,7 +47,7 @@ header {
   li {
     margin-right: 15px;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 18px;
     a:hover {
       color: $nav-color;
       font-weight: 900;
@@ -501,14 +514,8 @@ footer {
   }
 }
 #free-section {
-  height: 4rem;
-  .free-section {
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-  }
+  height: 2rem;
+  width: 100%;
 }
 
 #entrance-notice {

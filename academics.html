@@ -9,14 +9,22 @@
       src="https://kit.fontawesome.com/a300b75309.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- my css style link -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Academics</title>
   </head>
   <body>
     <header>
-      <div class="logo-text">
-        <h2>The love for Education</h2>
+      <div class="logo">
+        <div class="logo-img">
+          <img src="./school-images/logo/school_logo.PNG" alt="logo" />
+        </div>
       </div>
       <div>
         <div class="nav-links" id="nav-div">
@@ -56,39 +64,39 @@
     </section>
     <section id="boxes">
       <div class="junior-boxes">
-        <div class="box1">
+        <div data-aos="fade-right" class="box1">
           <i class="fa-solid fa-square-root-variable"></i>
           <p>Mathematics</p>
           <div class="line"></div>
         </div>
-        <div class="box2">
+        <div data-aos="fade-right" class="box2">
           <i class="fa-solid fa-scroll"></i>
           <p>English</p>
           <div class="line"></div>
         </div>
-        <div class="box3">
+        <div data-aos="fade-left" class="box3">
           <i class="fa-solid fa-palette"></i>
           <p>Creative art</p>
           <div class="line"></div>
         </div>
-        <div class="box4">
+        <div data-aos="fade-right" class="box4">
           <i class="fa-solid fa-microscope"></i>
           <p>Science and Technology</p>
           <div class="line"></div>
         </div>
-        <div class="box5">
+        <div data-aos="fade-right" class="box5">
           <i class="fa-solid fa-gavel"></i>
           <p>Vocational studies</p>
           <div class="line"></div>
         </div>
-        <div class="box6">
+        <div data-aos="fade-left" class="box6">
           <i class="fa-solid fa-cross"></i>
           <p>Christian Religious Studies</p>
           <div class="line"></div>
         </div>
       </div>
     </section>
-    <section id="electives">
+    <section data-aos="fade-left" id="electives">
       <div class="electives">
         <h1>Electives</h1>
         <p>Choose either one of them</p>
@@ -142,5 +150,10 @@
       </div>
     </footer>
     <script src="toggle.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

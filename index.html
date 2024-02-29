@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -22,8 +27,10 @@
   </head>
   <body>
     <header>
-      <div class="logo-text">
-        <h2>The love for Education</h2>
+      <div class="logo">
+        <div class="logo-img">
+          <img src="./school-images/logo/school_logo.PNG" alt="logo" />
+        </div>
       </div>
       <div>
         <div class="nav-links" id="nav-div">
@@ -58,7 +65,7 @@
         </figure>
       </div>
     </section>
-    <section id="learn-more">
+    <section data-aos="fade-right" id="learn-more">
       <div class="cards">
         <div class="cards-1">
           <div class="cards-header">
@@ -110,7 +117,7 @@
         </div>
       </div>
     </section>
-    <section class="mt-3 ml-3" id="feature-story">
+    <section data-aos="fade-right" class="mt-3 ml-3" id="feature-story">
       <div class="feature-story">
         <h3>Feature Story</h3>
         <p>Academic excellence Report</p>
@@ -120,7 +127,7 @@
         </div>
       </div>
     </section>
-    <section id="upcoming-events">
+    <section data-aos="fade-right" id="upcoming-events">
       <h2>upcoming events</h2>
       <div class="upcoming-events">
         <div>
@@ -141,7 +148,7 @@
         </div>
       </div>
     </section>
-    <section id="mission">
+    <section data-aos="fade-right" id="mission">
       <div class="mission-img">
         <img src="./school-images/pexels-pixabay-256490.jpg" />
       </div>
@@ -163,7 +170,7 @@
         </p>
       </div>
     </section>
-    <section id="gallery">
+    <section data-aos="fade-right" id="gallery">
       <div class="gallery-slider swiper mySwiper">
         <div class="gallery swiper-wrapper">
           <div class="gallery-img swiper-slide">
@@ -208,7 +215,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section id="hist-fact">
+    <section data-aos="fade-right" id="hist-fact">
       <div class="hist-fact">
         <div class="hist">
           <h2>our history</h2>
@@ -295,5 +302,10 @@
       });
     </script>
     <script src="toggle.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
